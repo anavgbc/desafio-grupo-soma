@@ -241,7 +241,7 @@ const database = [
   },
 ];
 
-// 1. Orderna todos os objetos pela chave "name" // sort
+// 1. Orderna todos os objetos pela chave "name"
 // 2. Gerar a patir do resultado do item 1, uma nova array com as chaves "name","email","price" e "address"
 // 3. Filtrar a partir do resultado do item 2, os dados por usuários da "rua" com o valor "Kulas Light"
 // 4. Somar a partir do resultado do item 3, todos os valores da chave "price" e retonar um valor total
