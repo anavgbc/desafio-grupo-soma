@@ -7,10 +7,11 @@ const Button = ({ icon, action }) => {
     useContext(CardContext);
 
   const handleClick = () => {
-    setAnimation("reject");
+    setAnimation(action);
     setIsClicked(!isClicked);
     nextCard();
   };
+  console.log(action);
   return (
     <ButtonAction
       className={`button--${action}`}
