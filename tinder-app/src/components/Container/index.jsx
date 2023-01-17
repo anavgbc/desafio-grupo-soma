@@ -28,6 +28,5 @@ const ContainerPage = () => {
     </>
   );
 };
-// BsHeart, CiRainbow, CiLight, DiCodeigniter, FcLikePlaceholder, GiStripedSun
 
 export default ContainerPage;

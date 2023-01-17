@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const ButtonAction = styled.button`
-  // width: 25%;
-  // height: 60%;
   width: 60px;
   height: 60px;
   font-size: 1.563rem;
