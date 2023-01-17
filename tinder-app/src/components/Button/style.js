@@ -14,12 +14,6 @@ export const ButtonAction = styled.button`
   background-color: var(--white);
   box-shadow: var(--shadow);
 
-  @media screen and (max-width: 320px) {
-    // width: 80px;
-    // height: 80px;
-    // font-size: 1.25rem;
-  }
-
   @media screen and (min-width: 768px) {
     width: 70px;
     height: 70px;

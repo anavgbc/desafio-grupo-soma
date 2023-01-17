@@ -41,9 +41,15 @@ body {
     justify-content: center;
 }
 
+
 .chakra-button__group{
     justify-content: space-around;
     width: 100%;
+    
+}
+.chakra-modal__content{
+    align-items: center;
+
 }
 
 ol, ul {

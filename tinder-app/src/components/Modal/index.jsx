@@ -82,9 +82,9 @@ const ModalSettings = () => {
 
           <ModalFooter>
             <Button
-              colorScheme="gray"
+              colorScheme="pink"
               _focus={{
-                bg: "#e66868",
+                bg: "#47519a",
                 color: "#ffffff",
               }}
               mr={4}
