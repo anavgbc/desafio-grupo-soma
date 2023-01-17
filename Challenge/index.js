@@ -255,6 +255,8 @@ function orderName() {
   const orderedList = database.sort((a, b) =>
     a.name < b.name ? -1 : a.name > b.name ? 1 : 0
   );
+
+  return orderedList;
 }
 
 // ##### 2.
@@ -284,10 +286,10 @@ function getTotalPrice() {
     return currentValue.price + previousValue;
   }, 0);
 
-  return totalPrice;
+  return totalPrice.toFixed(2);
 }
 
 console.log("1:", orderName());
-console.log("2:", orderName());
+console.log("2:", filterKeys());
 console.log("3:", filterdList());
 console.log("4:", getTotalPrice());
