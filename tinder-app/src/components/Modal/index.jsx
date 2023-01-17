@@ -9,16 +9,15 @@ import {
   ModalFooter,
   ModalBody,
   ModalCloseButton,
-  useDisclosure,
   Button,
   ButtonGroup,
 } from "@chakra-ui/react";
+import { ModalContext } from "../../providers/ModalContext";
 
 const ModalSettings = () => {
-  const { setGender, nextCard, OverlayOne, setOverlay } =
-    useContext(CardContext);
-
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { setGender, nextCard } = useContext(CardContext);
+  const { setOverlay, onOpen, OverlayOne, isOpen, onClose } =
+    useContext(ModalContext);
 
   return (
     <>
