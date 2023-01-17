@@ -6,7 +6,6 @@ import { AnimationContext } from "../../providers/AnimationContext";
 
 const Card = ({ user }) => {
   const { animationClass, controls } = useContext(AnimationContext);
-  console.log(user);
 
   return (
     <>

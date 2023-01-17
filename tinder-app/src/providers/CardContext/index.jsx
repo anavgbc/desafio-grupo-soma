@@ -34,6 +34,7 @@ export const CardContextProvider = ({ children }) => {
         setGender,
         gender,
         nextCard,
+        isLoading,
       }}
     >
       {children}

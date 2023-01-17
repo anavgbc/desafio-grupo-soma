@@ -19,9 +19,9 @@ const ContainerPage = () => {
           <h3>Discover</h3>
           <Card user={user} />
           <div className="container--buttons">
-            <Button icon={<CgClose />} action="reject" />
-            <Button icon={<BsStarFill />} action="superlike" />
-            <Button icon={<FaCheck />} action="accept" />
+            <Button action="reject">{<CgClose />}</Button>
+            <Button action="superlike">{<BsStarFill />}</Button>
+            <Button action="accept"> {<FaCheck />} </Button>
           </div>
         </div>
       </Container>

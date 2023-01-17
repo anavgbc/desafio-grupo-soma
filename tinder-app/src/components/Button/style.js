@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const ButtonAction = styled.button`
-  width: 25%;
-  height: 60%;
+  // width: 25%;
+  // height: 60%;
+  width: 60px;
+  height: 60px;
   font-size: 1.563rem;
   margin: 0 auto;
   display: flex;
@@ -13,11 +15,18 @@ export const ButtonAction = styled.button`
   box-shadow: var(--shadow);
 
   @media screen and (max-width: 320px) {
-    width: 20%;
-    height: 60%;
-    font-size: 1.25rem;
+    // width: 80px;
+    // height: 80px;
+    // font-size: 1.25rem;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 70px;
+    height: 70px;
+  }
+
   @media screen and (min-width: 1024px) {
-    height: 75%;
+    width: 50px;
+    height: 50px;
   }
 `;

@@ -23,6 +23,9 @@ const ModalSettings = () => {
     <>
       <Button
         _hover={{ color: "#c3c3c3" }}
+        _focus={{
+          bg: "none",
+        }}
         onClick={() => {
           setOverlay(<OverlayOne />);
           onOpen();

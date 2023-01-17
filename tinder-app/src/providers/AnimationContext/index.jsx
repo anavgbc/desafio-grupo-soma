@@ -16,7 +16,7 @@ export const AnimationContextProvider = ({ children }) => {
           y: [0, -550, 0],
           scale: [1, 0.8, 1],
           opacity: [1, 0, 0, 1],
-          transition: { duration: 1.55, ease: "backInOut" },
+          transition: { duration: 1.5, ease: "backInOut" },
           backgroundColor: ["#81d47d3a", "#81d47d3a", "#ffffff"],
         })
       : controls.start({
@@ -24,7 +24,7 @@ export const AnimationContextProvider = ({ children }) => {
           y: [0, -550, 0],
           scale: [1, 0.8, 1],
           opacity: [1, 0, 0, 1],
-          transition: { duration: 1.55, ease: "backInOut" },
+          transition: { duration: 1.5, ease: "backInOut" },
           backgroundColor: ["#e668682d", "#e668682d", "#ffffff"],
         });
   }, [isClicked]);

@@ -3,7 +3,7 @@ import { AnimationContext } from "../../providers/AnimationContext";
 import { CardContext } from "../../providers/CardContext";
 import { ButtonAction } from "./style";
 
-const Button = ({ icon, action }) => {
+const Button = ({ action, children }) => {
   const { nextCard } = useContext(CardContext);
   const { setAnimation, setIsClicked, isClicked } =
     useContext(AnimationContext);
@@ -13,7 +13,6 @@ const Button = ({ icon, action }) => {
     setIsClicked(!isClicked);
     nextCard();
   };
-  console.log(action);
   return (
     <ButtonAction
       className={`button--${action}`}
@@ -21,7 +20,7 @@ const Button = ({ icon, action }) => {
         handleClick();
       }}
     >
-      {icon}
+      {children}
     </ButtonAction>
   );
 };
