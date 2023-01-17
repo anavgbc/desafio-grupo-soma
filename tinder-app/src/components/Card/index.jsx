@@ -1,11 +1,11 @@
 import { Container } from "./style";
 import { useContext } from "react";
 import { motion } from "framer-motion";
-import { CardContext } from "../../providers/CardContext";
 import { AiOutlineInfoCircle } from "react-icons/ai";
+import { AnimationContext } from "../../providers/AnimationContext";
 
 const Card = ({ user }) => {
-  const { animationClass, controls } = useContext(CardContext);
+  const { animationClass, controls } = useContext(AnimationContext);
   console.log(user);
 
   return (

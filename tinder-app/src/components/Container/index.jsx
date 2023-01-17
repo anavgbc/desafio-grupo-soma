@@ -9,7 +9,7 @@ import { CgClose } from "react-icons/cg";
 import { BsStarFill } from "react-icons/bs";
 
 const ContainerPage = () => {
-  const { users } = useContext(CardContext);
+  const { user } = useContext(CardContext);
 
   return (
     <>
@@ -17,11 +17,11 @@ const ContainerPage = () => {
         <Header />
         <div className="container--box">
           <h3>Discover</h3>
-          <Card user={users} />
+          <Card user={user} />
           <div className="container--buttons">
-            <Button icon={<CgClose />} action={"reject"} />
+            <Button icon={<CgClose />} action="reject" />
             <Button icon={<BsStarFill />} action="superlike" />
-            <Button icon={<FaCheck />} action={"accept"} />
+            <Button icon={<FaCheck />} action="accept" />
           </div>
         </div>
       </Container>
