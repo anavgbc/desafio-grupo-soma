@@ -1,10 +1,14 @@
-import "./App.css";
+import GlobalReset from "./styles/reset";
+import GlobalBase from "./styles/global";
+import ContainerPage from "./components/Container";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
+    <>
+      <GlobalReset />
+      <GlobalBase />
+      <ContainerPage />
+    </>
   );
 }
 
