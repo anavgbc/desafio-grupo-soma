@@ -246,8 +246,16 @@ const database = [
 // 3. Filtrar a partir do resultado do item 2, os dados por usuários da "rua" com o valor "Kulas Light"
 // 4. Somar a partir do resultado do item 3, todos os valores da chave "price" e retonar um valor total
 
+// const algo = database.sort(function (a, b) {
+//   return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+// });
+
 // ##### 1.
-function orderName() {}
+function orderName() {
+  const orderedList = database.sort((a, b) =>
+    a.name < b.name ? -1 : a.name > b.name ? 1 : 0
+  );
+}
 
 // ##### 2.
 function filterKeys() {
