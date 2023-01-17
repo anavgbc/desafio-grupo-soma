@@ -4,7 +4,7 @@ const database = [
     name: "Leanne Graham",
     username: "Bret",
     email: "Sincere@april.biz",
-    "price:": 1478.1,
+    price: 1478.1,
     address: {
       street: "Kulas Light",
       suite: "Apt. 556",
@@ -28,7 +28,7 @@ const database = [
     name: "Ervin Howell",
     username: "Antonette",
     email: "Shanna@melissa.tv",
-    "price:": 278.1,
+    price: 278.1,
     address: {
       street: "Victor Plains",
       suite: "Suite 879",
@@ -52,7 +52,7 @@ const database = [
     name: "Clementine Bauch",
     username: "Samantha",
     email: "Nathan@yesenia.net",
-    "price:": 578.1,
+    price: 578.1,
     address: {
       street: "Douglas Extension",
       suite: "Suite 847",
@@ -76,7 +76,7 @@ const database = [
     name: "Patricia Lebsack",
     username: "Karianne",
     email: "Julianne.OConner@kory.org",
-    "price:": 710.1,
+    price: 710.1,
     address: {
       street: "Kulas Light",
       suite: "Apt. 692",
@@ -100,7 +100,7 @@ const database = [
     name: "Chelsey Dietrich",
     username: "Kamren",
     email: "Lucio_Hettinger@april.biz",
-    "price:": 710.1,
+    price: 710.1,
     address: {
       street: "Skiles Walks",
       suite: "Suite 351",
@@ -124,7 +124,7 @@ const database = [
     name: "Mrs. Dennis Schulist",
     username: "Leopoldo_Corkery",
     email: "Karley_Dach@jasper.info",
-    "price:": 110.1,
+    price: 110.1,
     address: {
       street: "Kulas Light",
       suite: "Apt. 950",
@@ -148,7 +148,7 @@ const database = [
     name: "Kurtis Weissnat",
     username: "Elwyn.Skiles",
     email: "Telly.Hoeger@billy.biz",
-    "price:": 6710.1,
+    price: 6710.1,
     address: {
       street: "Rex Trail",
       suite: "Suite 280",
@@ -172,7 +172,7 @@ const database = [
     name: "Nicholas Runolfsdottir V",
     username: "Maxime_Nienow",
     email: "Sherwood@april.biz",
-    "price:": 4710.1,
+    price: 4710.1,
     address: {
       street: "Ellsworth Summit",
       suite: "Suite 729",
@@ -196,7 +196,7 @@ const database = [
     name: "Glenna Reichert",
     username: "Delphine",
     email: "Chaim_McDermott@dana.io",
-    "price:": 910.1,
+    price: 910.1,
     address: {
       street: "Dayna Park",
       suite: "Suite 449",
@@ -220,7 +220,7 @@ const database = [
     name: "Clementina DuBuque",
     username: "Moriah.Stanton",
     email: "Rey.Padberg@karina.biz",
-    "price:": 210.1,
+    price: 210.1,
     address: {
       street: "Kattie Turnpike",
       suite: "Suite 198",
@@ -242,6 +242,44 @@ const database = [
 ];
 
 // 1. Orderna todos os objetos pela chave "name"
-// 2. Gerar a patir do resultado do item 1, uma nova array com as chaves "name","email","price" e "address"
+// 2. Gerar a patir do resultado do item 1, uma nova array com as chaves "name","email", price' e "address"
 // 3. Filtrar a partir do resultado do item 2, os dados por usuários da "rua" com o valor "Kulas Light"
 // 4. Somar a partir do resultado do item 3, todos os valores da chave "price" e retonar um valor total
+
+// ##### 1.
+function orderName() {}
+
+// ##### 2.
+function filterKeys() {
+  const filteredKeys = orderName().map(({ name, email, price, address }) => ({
+    name,
+    email,
+    price,
+    address,
+  }));
+
+  return filteredKeys;
+}
+
+// ##### 3.
+function filterdList() {
+  const filteredList = filterKeys().filter(
+    (user) => user.address.street === "Kulas Light"
+  );
+
+  return filteredList;
+}
+
+// ##### 4.
+function getTotalPrice() {
+  const totalPrice = filterdList().reduce((previousValue, currentValue) => {
+    return currentValue.price + previousValue;
+  }, 0);
+
+  return totalPrice;
+}
+
+console.log("1:", orderName());
+console.log("2:", orderName());
+console.log("3:", filterdList());
+console.log("4:", getTotalPrice());
