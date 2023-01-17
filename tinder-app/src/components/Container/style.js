@@ -8,9 +8,9 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 10px;
-  backdrop-filter: blur(5px);
+  background-color: var(--base-white);
+  border-radius: 0.625rem;
+  backdrop-filter: blur(0.313rem);
   color: var(--black);
 
   @media screen and (min-width: 768px) {
@@ -29,7 +29,7 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     h3 {
-      margin: 5px 0px;
+      margin: 0.313rem 0;
       font-size: 1.875rem;
       font-weight: 700;
 
@@ -47,14 +47,14 @@ export const Container = styled.div`
     height: 20%;
     align-items: center;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0.625rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 
     @media screen and (min-width: 768px) {
       margin-bottom: 0;
-      padding: 10px;
+      padding: 0.625rem;
     }
 
     .button--accept {
@@ -66,7 +66,7 @@ export const Container = styled.div`
     }
 
     .button--superlike {
-      color: #7497fb;
+      color: var(--superlike-blue);
     }
   }
 `;

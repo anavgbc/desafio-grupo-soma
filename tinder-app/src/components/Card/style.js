@@ -15,35 +15,35 @@ export const Container = styled.div`
 
   @media screen and (min-width: 768px) {
     height: 60%;
-    margin-top: 15px;
+    margin-top: 0.938rem;
   }
 
   .card {
     width: 100%;
     height: 100%;
     background-color: var(--white);
-    box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.12);
-    border-radius: 15px;
+    box-shadow: var(--shadow);
+    border-radius: 0.938rem;
 
     img {
       width: 100%;
       height: 75%;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
       object-fit: cover;
     }
 
     .card--info {
       width: 100%;
       height: 20%;
-      margin: 0 15px;
+      margin: 0 0.938rem;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
 
       @media screen and (max-width: 320px) {
-        padding: 5px;
+        padding: 0.313rem;
       }
 
       > div {
@@ -51,9 +51,8 @@ export const Container = styled.div`
       }
 
       h3 {
-        /* width: 220px; */
         width: 80%;
-        font-size: 28px;
+        font-size: 1.75rem;
         font-weight: 650;
         text-align: start;
         text-overflow: ellipsis;
@@ -65,9 +64,9 @@ export const Container = styled.div`
         }
 
         @media screen and (max-width: 320px) {
-          font-size: 22px;
+          font-size: 1.375rem;
           font-weight: 600;
-          width: 150px;
+          width: 9.375rem;
         }
 
         @media screen and (min-width: 1024px) {
@@ -76,22 +75,22 @@ export const Container = styled.div`
       }
 
       p {
-        width: 230px;
-        font-size: 16px;
+        width: 14.375rem;
+        font-size: 1rem;
         font-weight: 400;
-        color: gray;
+        color: var(--gray);
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
 
         @media screen and (max-width: 320px) {
-          width: 150px;
+          width: 9.375rem;
         }
       }
 
       span {
-        color: #7497fb;
-        font-size: 25px;
+        color: var(--superlike-blue);
+        font-size: 1.563rem;
         width: 20%;
       }
     }

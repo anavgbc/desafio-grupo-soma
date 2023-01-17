@@ -9,7 +9,7 @@ export const Container = styled.div`
 
   @media screen and (min-width: 768px) {
     width: 70%;
-    border-bottom: 2px solid;
+    border-bottom: 0.125rem solid;
     border-style: solid;
     border-image: linear-gradient(
         90deg,
@@ -29,21 +29,15 @@ export const Container = styled.div`
     align-content: center;
   }
 
-  /* p {
-    font-family: "Alex Brush", cursive;
-    font-size: 20px;
-    color: #7497fb;
-  } */
-
   button {
-    font-size: 28px;
+    font-size: 1.75rem;
     background-color: transparent;
-    color: gray;
+    color: var(--gray);
     height: 100%;
-    margin: 5px 10px;
+    margin: 0.313rem 0.625rem;
 
     @media screen and (min-width: 768px) {
-      font-size: 25px;
+      font-size: 1.563rem;
     }
   }
 `;
